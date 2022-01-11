@@ -18,6 +18,7 @@ add_executable(
     UnitTest
     Main.cpp
     UnitTestLargeExponent.cpp
+    UnitTestConversion.cpp
 )
 
 target_compile_definitions(UnitTest PUBLIC CTEST)
@@ -26,6 +27,7 @@ target_link_libraries(
     UnitTest
     gtest_main
     LargeExponent
+    Conversion
 )
 
 gtest_discover_tests(UnitTest

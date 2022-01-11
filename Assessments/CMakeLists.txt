@@ -1,4 +1,5 @@
 add_subdirectory(LargeExponent)
+add_subdirectory(Conversion)
 
 install(
     EXPORT RocketLab-config
