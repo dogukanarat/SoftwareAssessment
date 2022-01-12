@@ -1,8 +1,5 @@
 #include "Conversion/Conversion.h"
 
-// Look-Up-Table (LUT) of the pressure sensor defined in LookUpTable.c
-extern pressure_sensor_lut_st presure_lut_sta[];
-
 int16_t search_lut(uint16_t adc_reading_u16)
 {
     // this function performs binary search on the LUT with the given ADC reading

@@ -1,7 +1,7 @@
 #include "Conversion/Conversion.h"
 
 // Look-Up-Table (LUT) of the pressure sensor
-extern const pressure_sensor_lut_st presure_lut_sta[LUT_SIZE] =
+const pressure_sensor_lut_st presure_lut_sta[LUT_SIZE] =
 {
     { 100, 1696 },
     { 110, 1909 },

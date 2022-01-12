@@ -19,6 +19,9 @@ typedef struct
     uint16_t adc_reading_u16; // ADC reading
 } pressure_sensor_lut_st;
 
+// Look-Up-Table (LUT) of the pressure sensor defined in LookUpTable.c
+extern const pressure_sensor_lut_st presure_lut_sta[LUT_SIZE];
+
 /**
  * @brief Get percentage of value in the range of min and max
  * 
