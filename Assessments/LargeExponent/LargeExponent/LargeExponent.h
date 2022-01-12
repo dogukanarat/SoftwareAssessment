@@ -6,8 +6,6 @@
 #include <vector>
 #include <ctype.h>
 
-#define MAX_DIGITS 9999
-
 namespace RocketLab
 {
     class LargeExponent
