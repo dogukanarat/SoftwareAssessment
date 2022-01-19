@@ -5,6 +5,8 @@ project(
     VERSION 0.1
 )
 
+add_subdirectory(CMake)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 # set the C++ standard
