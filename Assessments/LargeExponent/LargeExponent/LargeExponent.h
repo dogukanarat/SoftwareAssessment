@@ -1,3 +1,13 @@
+/**
+ * @file LargeExponent.h
+ * @author Dogukan Fikri Arat
+ * @brief 
+ * @version 0.1
+ * @date 2022-01-19
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef INCLUDED_BIGEXPONENTIAL_H
 #define INCLUDED_BIGEXPONENTIAL_H
 
@@ -8,6 +18,10 @@
 
 namespace RocketLab
 {
+    /**
+     * @brief The BigExponential class
+     * 
+     */
     class LargeExponent
     {
     public:
@@ -69,7 +83,7 @@ namespace RocketLab
          * 
          * @param base : base to multiply
          * @param buffer : buffer to multiply
-         * @param counter : counter of the buffer
+         * @param size : counter of the buffer
          * @return int : counter of the buffer
          */
         int multiply(int base, std::vector<int>& buffer, int size);
