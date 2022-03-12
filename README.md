@@ -1,5 +1,5 @@
-# RocketLab Assessment
-RocketLab company assessment. Project includes 2 libraries which were tested with GoogleTest framework.
+# Software Assessment
+Software development company assessment. Project includes 2 libraries which were tested with GoogleTest framework.
 
 The output of the GoogleTest is below.
 
