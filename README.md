@@ -1,3 +1,5 @@
+[![CMake](https://github.com/dogukanarat/SoftwareAssessment/actions/workflows/cmake.yml/badge.svg)](https://github.com/dogukanarat/SoftwareAssessment/actions/workflows/cmake.yml)
+
 # Software Assessment
 Software development company assessment. Project includes 2 libraries which were tested with GoogleTest framework.
 
