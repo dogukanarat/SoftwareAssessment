@@ -17,6 +17,7 @@ extern "C" {
 #endif
 
 #include <stdlib.h>
+#include <stdint.h>
 
 #define LUT_SIZE 91
 
