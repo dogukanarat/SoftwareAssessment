@@ -24,7 +24,7 @@ jobs:
       uses: seanmiddleditch/gha-setup-ninja@v3
       
     - name: Confgure and Build
-      run: cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_INSTALL_PREFIX=${{github.workspace}}/Binaries/Debug/Output -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG=${{github.workspace}}/Binaries/Debug/Intermediate -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_OSX_ARCHITECTURES=x86_64 -H./ -B${{github.workspace}}/Binaries/Debug/Intermediate -G Ninja
+      run: cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_INSTALL_PREFIX=${{github.workspace}}/Binaries/${{env.BUILD_TYPE}}/Output -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG=${{github.workspace}}/Binaries/${{env.BUILD_TYPE}}/Intermediate -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_OSX_ARCHITECTURES=x86_64 -H./ -B${{github.workspace}}/Binaries/${{env.BUILD_TYPE}}/Intermediate -G Ninja
 
     - name: Install
       # Build your program with the given configuration
