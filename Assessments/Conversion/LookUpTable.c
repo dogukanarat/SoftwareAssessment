@@ -1,3 +1,14 @@
+/**
+ * @file LookUpTable.c
+ * @author Dogukan Fikri Arat
+ * @brief 
+ * @version 0.1
+ * @date 2022-01-19
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Conversion/Conversion.h"
 
 // Look-Up-Table (LUT) of the pressure sensor

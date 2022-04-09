@@ -1,3 +1,14 @@
+/**
+ * @file Conversion.h
+ * @author Dogukan Fikri Arat
+ * @brief 
+ * @version 0.1
+ * @date 2022-01-19
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #ifndef INCLUDED_CONVERTION_H
 #define INCLUDED_CONVERTION_H
 

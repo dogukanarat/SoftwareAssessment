@@ -1,3 +1,14 @@
+/**
+ * @file Conversion.c
+ * @author Dogukan Fikri Arat
+ * @brief 
+ * @version 0.1
+ * @date 2022-01-19
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Conversion/Conversion.h"
 
 int16_t search_lut(uint16_t adc_reading_u16)

@@ -1,3 +1,7 @@
+PROJECT_NAME           = @CMAKE_PROJECT_NAME@
 OUTPUT_DIRECTORY       = @CMAKE_SOURCE_DIR@/Docs/Doxygen
-INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/../Assessments/LargeExponent 
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../Assessments/LargeExponent 
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../Assessments/Conversion
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../README.md
+USE_MDFILE_AS_MAINPAGE = @CMAKE_CURRENT_SOURCE_DIR@/../README.md
 RECURSIVE              = YES
