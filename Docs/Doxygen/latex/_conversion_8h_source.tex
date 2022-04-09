@@ -1,0 +1,38 @@
+\hypertarget{_conversion_8h_source}{}\doxysection{Conversion.\+h}
+\label{_conversion_8h_source}\index{/Users/dogukanarat/Desktop/Workspace/RocketLab/Assessments/Conversion/Conversion/Conversion.h@{/Users/dogukanarat/Desktop/Workspace/RocketLab/Assessments/Conversion/Conversion/Conversion.h}}
+\mbox{\hyperlink{_conversion_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef INCLUDED\_CONVERTION\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define INCLUDED\_CONVERTION\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{16 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define LUT\_SIZE 91}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     uint16\_t pressure\_kpa\_u16; \textcolor{comment}{// Pressure in kPa}}
+\DoxyCodeLine{30     uint16\_t adc\_reading\_u16; \textcolor{comment}{// ADC reading}}
+\DoxyCodeLine{31 \} \mbox{\hyperlink{structpressure__sensor__lut__st}{pressure\_sensor\_lut\_st}};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{comment}{// Look-\/Up-\/Table (LUT) of the pressure sensor defined in LookUpTable.c}}
+\DoxyCodeLine{34 \textcolor{keyword}{extern} \textcolor{keyword}{const} \mbox{\hyperlink{structpressure__sensor__lut__st}{pressure\_sensor\_lut\_st}} presure\_lut\_sta[LUT\_SIZE];}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{float} \mbox{\hyperlink{_conversion_8h_a7fb783c2d2dbf896d8b95f41ba93b7f6}{normalize}}(uint16\_t low, uint16\_t high, uint16\_t value);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52 int16\_t \mbox{\hyperlink{_conversion_8h_a44cca17bbcbfa9d59a12f5de1f62ce99}{search\_lut}}(uint16\_t adc\_reading\_u16);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60 int16\_t \mbox{\hyperlink{_conversion_8h_a3bc2b5dd02882a12078978f9f3a5caeb}{get\_pressure}}(uint16\_t adc\_reading\_u16);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// INCLUDED\_CONVERTION\_H}}
+
+\end{DoxyCode}

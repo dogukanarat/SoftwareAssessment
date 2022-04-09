@@ -1,0 +1,179 @@
+\hypertarget{class_rocket_lab_1_1_large_exponent}{}\doxysection{Rocket\+Lab\+::Large\+Exponent Class Reference}
+\label{class_rocket_lab_1_1_large_exponent}\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+
+
+The Big\+Exponential class.  
+
+
+
+
+{\ttfamily \#include $<$Large\+Exponent.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a7c749aafcd01e2e5a3b8c8c8836c0f48}\label{class_rocket_lab_1_1_large_exponent_a7c749aafcd01e2e5a3b8c8c8836c0f48}} 
+{\bfseries Large\+Exponent} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Large Exponent object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_afbc3d1f24ca045c14e2531a99c34568f}\label{class_rocket_lab_1_1_large_exponent_afbc3d1f24ca045c14e2531a99c34568f}} 
+virtual {\bfseries $\sim$\+Large\+Exponent} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Large Exponent object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_a447e77185d22b4f29f1a1915daa23e52}{input}} (std\+::string input)
+\begin{DoxyCompactList}\small\item\em Check if the input is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_a37343dd44559d4d7798d287b6a6063b7}{output}} (std\+::string \&output)
+\begin{DoxyCompactList}\small\item\em Set the output string with the answer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_ae830c419445f0c3ceffac337f3d80e44}{calculate}} ()
+\begin{DoxyCompactList}\small\item\em Do the calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_aaf8968ecfe727db977b258cad49beae1}\label{class_rocket_lab_1_1_large_exponent_aaf8968ecfe727db977b258cad49beae1}} 
+void {\bfseries initialise\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Initialise the buffer with the given input string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a80e6e8dab8c5d82f7e1400ba87d2aa89}\label{class_rocket_lab_1_1_large_exponent_a80e6e8dab8c5d82f7e1400ba87d2aa89}} 
+void {\bfseries finalise\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Finalise the buffer setting the output string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a1f2a2955fd4af8580718990c2d5f12b1}\label{class_rocket_lab_1_1_large_exponent_a1f2a2955fd4af8580718990c2d5f12b1}} 
+void {\bfseries calculate\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Finalise the buffer setting the output string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_aaa8fea5551f91a9313a47d0488ab4e55}{multiply}} (int base, std\+::vector$<$ int $>$ \&buffer, int size)
+\begin{DoxyCompactList}\small\item\em Multiply the given base with the given buffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_a8d95164adda1158c304593d0c16c02cc}{is\+Digit}} (std\+::string \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_a447e77185d22b4f29f1a1915daa23e52}{input}})
+\begin{DoxyCompactList}\small\item\em Check if the input parameter is all digits. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_aaf65fbd48b866e35cf77cd9f300bf7ec}{reverse}} (std\+::string \mbox{\hyperlink{class_rocket_lab_1_1_large_exponent_a447e77185d22b4f29f1a1915daa23e52}{input}})
+\begin{DoxyCompactList}\small\item\em Reverse the given input parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_aff4382f5eaacb8e83f9462eb9dae654a}\label{class_rocket_lab_1_1_large_exponent_aff4382f5eaacb8e83f9462eb9dae654a}} 
+std\+::string {\bfseries m\+\_\+input}
+\begin{DoxyCompactList}\small\item\em User input string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a234d504c97394ec76a36a1d2cf2473ec}\label{class_rocket_lab_1_1_large_exponent_a234d504c97394ec76a36a1d2cf2473ec}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+buffer}
+\begin{DoxyCompactList}\small\item\em Result of multiplication buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a7247429a1bc6f801a7e4fe67c1b20506}\label{class_rocket_lab_1_1_large_exponent_a7247429a1bc6f801a7e4fe67c1b20506}} 
+std\+::string {\bfseries m\+\_\+result}
+\begin{DoxyCompactList}\small\item\em Result string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a3c8ae05eafe0c7e3f1f23a835aa22b8b}\label{class_rocket_lab_1_1_large_exponent_a3c8ae05eafe0c7e3f1f23a835aa22b8b}} 
+int {\bfseries m\+\_\+counter}
+\begin{DoxyCompactList}\small\item\em Counter of the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a28d0f7310620c513b5c062befad1cc50}\label{class_rocket_lab_1_1_large_exponent_a28d0f7310620c513b5c062befad1cc50}} 
+int {\bfseries m\+\_\+base}
+\begin{DoxyCompactList}\small\item\em Base of exponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a64f50af7ae5bd33e6bce5d9675debdfc}\label{class_rocket_lab_1_1_large_exponent_a64f50af7ae5bd33e6bce5d9675debdfc}} 
+int {\bfseries m\+\_\+power}
+\begin{DoxyCompactList}\small\item\em power of exponent \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Big\+Exponential class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_ae830c419445f0c3ceffac337f3d80e44}\label{class_rocket_lab_1_1_large_exponent_ae830c419445f0c3ceffac337f3d80e44}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!calculate@{calculate}}
+\index{calculate@{calculate}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily bool Large\+Exponent\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Do the calculation. 
+
+\begin{DoxyReturn}{Returns}
+true if the calculation succeed otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a447e77185d22b4f29f1a1915daa23e52}\label{class_rocket_lab_1_1_large_exponent_a447e77185d22b4f29f1a1915daa23e52}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!input@{input}}
+\index{input@{input}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily bool Large\+Exponent\+::input (\begin{DoxyParamCaption}\item[{std\+::string}]{input }\end{DoxyParamCaption})}
+
+
+
+Check if the input is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \+: input string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input is valid otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a8d95164adda1158c304593d0c16c02cc}\label{class_rocket_lab_1_1_large_exponent_a8d95164adda1158c304593d0c16c02cc}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!isDigit@{isDigit}}
+\index{isDigit@{isDigit}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{isDigit()}{isDigit()}}
+{\footnotesize\ttfamily bool Large\+Exponent\+::is\+Digit (\begin{DoxyParamCaption}\item[{std\+::string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Check if the input parameter is all digits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \+: input string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input is all digit otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_aaa8fea5551f91a9313a47d0488ab4e55}\label{class_rocket_lab_1_1_large_exponent_aaa8fea5551f91a9313a47d0488ab4e55}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!multiply@{multiply}}
+\index{multiply@{multiply}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily int Large\+Exponent\+::multiply (\begin{DoxyParamCaption}\item[{int}]{base,  }\item[{std\+::vector$<$ int $>$ \&}]{buffer,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Multiply the given base with the given buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & \+: base to multiply \\
+\hline
+{\em buffer} & \+: buffer to multiply \\
+\hline
+{\em size} & \+: counter of the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: counter of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_a37343dd44559d4d7798d287b6a6063b7}\label{class_rocket_lab_1_1_large_exponent_a37343dd44559d4d7798d287b6a6063b7}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!output@{output}}
+\index{output@{output}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily bool Large\+Exponent\+::output (\begin{DoxyParamCaption}\item[{std\+::string \&}]{output }\end{DoxyParamCaption})}
+
+
+
+Set the output string with the answer. 
+
+\begin{DoxyReturn}{Returns}
+true if the output is ready otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rocket_lab_1_1_large_exponent_aaf65fbd48b866e35cf77cd9f300bf7ec}\label{class_rocket_lab_1_1_large_exponent_aaf65fbd48b866e35cf77cd9f300bf7ec}} 
+\index{RocketLab::LargeExponent@{RocketLab::LargeExponent}!reverse@{reverse}}
+\index{reverse@{reverse}!RocketLab::LargeExponent@{RocketLab::LargeExponent}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily std\+::string Large\+Exponent\+::reverse (\begin{DoxyParamCaption}\item[{std\+::string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reverse the given input parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \+: input string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \+: reversed input string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/dogukanarat/\+Desktop/\+Workspace/\+Rocket\+Lab/\+Assessments/\+Large\+Exponent/\+Large\+Exponent/\mbox{\hyperlink{_large_exponent_8h}{Large\+Exponent.\+h}}\item 
+/\+Users/dogukanarat/\+Desktop/\+Workspace/\+Rocket\+Lab/\+Assessments/\+Large\+Exponent/\mbox{\hyperlink{_large_exponent_8cpp}{Large\+Exponent.\+cpp}}\end{DoxyCompactItemize}

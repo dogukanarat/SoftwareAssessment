@@ -1,0 +1,105 @@
+\hypertarget{_conversion_8h}{}\doxysection{/\+Users/dogukanarat/\+Desktop/\+Workspace/\+Rocket\+Lab/\+Assessments/\+Conversion/\+Conversion/\+Conversion.h File Reference}
+\label{_conversion_8h}\index{/Users/dogukanarat/Desktop/Workspace/RocketLab/Assessments/Conversion/Conversion/Conversion.h@{/Users/dogukanarat/Desktop/Workspace/RocketLab/Assessments/Conversion/Conversion/Conversion.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpressure__sensor__lut__st}{pressure\+\_\+sensor\+\_\+lut\+\_\+st}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_conversion_8h_aebfcb45923a56e8581fda080243ec5bb}\label{_conversion_8h_aebfcb45923a56e8581fda080243ec5bb}} 
+\#define {\bfseries LUT\+\_\+\+SIZE}~91
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_conversion_8h_a7fb783c2d2dbf896d8b95f41ba93b7f6}{normalize}} (uint16\+\_\+t low, uint16\+\_\+t high, uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Get percentage of value in the range of min and max. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{_conversion_8h_a44cca17bbcbfa9d59a12f5de1f62ce99}{search\+\_\+lut}} (uint16\+\_\+t adc\+\_\+reading\+\_\+u16)
+\begin{DoxyCompactList}\small\item\em Find the index of the LUT that has the closest value to the given value. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{_conversion_8h_a3bc2b5dd02882a12078978f9f3a5caeb}{get\+\_\+pressure}} (uint16\+\_\+t adc\+\_\+reading\+\_\+u16)
+\begin{DoxyCompactList}\small\item\em Get the pressure which corresponds to the given ADC reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_conversion_8h_a5ee6d341f0591c4ef38a259f5efe87b0}\label{_conversion_8h_a5ee6d341f0591c4ef38a259f5efe87b0}} 
+const \mbox{\hyperlink{structpressure__sensor__lut__st}{pressure\+\_\+sensor\+\_\+lut\+\_\+st}} {\bfseries presure\+\_\+lut\+\_\+sta} \mbox{[}LUT\+\_\+\+SIZE\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Dogukan Fikri Arat 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/01-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_conversion_8h_a3bc2b5dd02882a12078978f9f3a5caeb}\label{_conversion_8h_a3bc2b5dd02882a12078978f9f3a5caeb}} 
+\index{Conversion.h@{Conversion.h}!get\_pressure@{get\_pressure}}
+\index{get\_pressure@{get\_pressure}!Conversion.h@{Conversion.h}}
+\doxysubsubsection{\texorpdfstring{get\_pressure()}{get\_pressure()}}
+{\footnotesize\ttfamily int16\+\_\+t get\+\_\+pressure (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{adc\+\_\+reading\+\_\+u16 }\end{DoxyParamCaption})}
+
+
+
+Get the pressure which corresponds to the given ADC reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+\_\+reading\+\_\+u16} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int16\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_conversion_8h_a7fb783c2d2dbf896d8b95f41ba93b7f6}\label{_conversion_8h_a7fb783c2d2dbf896d8b95f41ba93b7f6}} 
+\index{Conversion.h@{Conversion.h}!normalize@{normalize}}
+\index{normalize@{normalize}!Conversion.h@{Conversion.h}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily float normalize (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{low,  }\item[{uint16\+\_\+t}]{high,  }\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Get percentage of value in the range of min and max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em low} & minimum value \\
+\hline
+{\em high} & maximum value \\
+\hline
+{\em value} & actual value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_conversion_8h_a44cca17bbcbfa9d59a12f5de1f62ce99}\label{_conversion_8h_a44cca17bbcbfa9d59a12f5de1f62ce99}} 
+\index{Conversion.h@{Conversion.h}!search\_lut@{search\_lut}}
+\index{search\_lut@{search\_lut}!Conversion.h@{Conversion.h}}
+\doxysubsubsection{\texorpdfstring{search\_lut()}{search\_lut()}}
+{\footnotesize\ttfamily int16\+\_\+t search\+\_\+lut (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{adc\+\_\+reading\+\_\+u16 }\end{DoxyParamCaption})}
+
+
+
+Find the index of the LUT that has the closest value to the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+\_\+reading\+\_\+u16} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int16\+\_\+t 
+\end{DoxyReturn}
