@@ -47,3 +47,10 @@ The output of the GoogleTest is below.
 [ctest] 
 [ctest] 100% tests passed, 0 tests failed out of 19
 ```
+# Coverage Report
+[Report Link](https://rawcdn.githack.com/dogukanarat/SoftwareAssessment/0f8c3ab990323d1642d8a3ab6b0fc9274dbbddc6/Coverage/report/index.html)
+
+| SubModule     | Line Percentage|
+| ------------- |:--------------:|
+| Conversion    | %95            |
+| LargeExponent | %95.4          |
