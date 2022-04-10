@@ -13,6 +13,9 @@ target_include_directories(
            $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
+# set_target_properties(LargeExponent PROPERTIES COMPILE_FLAGS "${CMAKE_CXX_FLAGS} --coverage -g -O0")
+# set_target_properties(LargeExponent PROPERTIES LINK_FLAGS "${CMAKE_CXX_FLAGS} --coverage -g")
+
 install(
     TARGETS LargeExponent
     EXPORT RocketLab-config
